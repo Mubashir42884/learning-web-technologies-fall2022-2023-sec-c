@@ -1,1 +1,1 @@
-# laerning-web-technologies-fall2022-2023-sec-c
+# learning-web-technologies-fall2022-2023-sec-c
