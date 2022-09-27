@@ -1,0 +1,11 @@
+<tests>
+	<test sl="1">
+		<data>The First Data is Viewing.</data>
+		<meta>This is the Meta of the Data.</meta>
+		<area>
+			<cords>This is From Cord 9A546</cords>
+			<ampds>Its Amplitude is -1.456014</ampds>
+			<soltd>This is a Freedom Quantumization</soltd>
+		</area>
+	</test>
+</tests>
