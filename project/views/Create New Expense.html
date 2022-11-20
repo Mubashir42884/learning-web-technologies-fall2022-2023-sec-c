@@ -1,0 +1,152 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Expense</title>
+</head>
+<body style="font-family: Quicksand ;">
+    <table border="0">
+        <tr bgcolor="#4e0755">
+
+            <th style='border:white;' align="center" colspan="2">
+                <a href="Member Dashboard.html" ><img src="Logo.png" height="180" ></a>
+
+                <p style='border:none; font-size: 20;' align="right">
+                    <a href="Home.html" style="color: #99d9ea ;" >Home</a>&nbsp;|&nbsp;&nbsp;
+                    <a href="Logout.html" style="color: #99d9ea ;">&nbsp;Log Out</a>&nbsp;&nbsp;
+                </p>
+            </th>
+        </tr>
+
+        <tr style="font-size: 26px;">
+            <td>
+                <h1 style="font-size: 38px; color: #4e0755; border-radius: 5px;" align="center">Create New Expense</h1>
+                <form>
+                    <fieldset style="border-radius: 30px;">
+                        <legend style="color: #4e0755; border-radius: 5px;"><b>CATEGORY</b></legend>
+                        <table border="0">
+                            <tr style="font-size: 22px;">
+                                <td><label>Choose your Category :</label></td>
+                                <td>
+                                    <select style="font-family:'Quicksand'; font-size: 18px;" name="ExpCat" id="expcat">
+                                        <option>Shopping Expense</option>
+                                        <option>Marketing Expense</option>
+                                        <option>Travelling Expense</option>
+                                        <option>Daily Expense</option>
+                                        <option>Billing Expense</option>
+                                        <option>Service Expense</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr >
+                                <td ><input type="submit" name="select" value="Select" style="font-family:'Quicksand'; font-size: 18px;">
+                                <input type="reset" name="reset" value="Reset" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset style="border-radius: 30px;">
+                        <legend style="color: #4e0755; border-radius: 5px;"><b>EXPENSE INFORMATION</b></legend>
+                        <table border="0">
+                            <tr style="font-size: 22px;">
+                                <td><label>Expense Category</label></td>
+                                <td>: <input type="text" name="expcat" value="Shopping Expense" style="font-family:'Quicksand'; font-size: 18px;" readonly></td>
+                            </tr>
+
+                            <tr style="font-size: 22px;">
+                                <td><label>Expense Name</label></td>
+                                <td>: <input size="64" type="text" name="expname" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            </tr>
+
+                            <tr style="font-size: 22px;">
+                                <td><label>Expense Location</label></td>
+                                <td>: <input size="64" type="text" name="exploc" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            </tr>
+
+                            <tr style="font-size: 22px;">
+                                <td><label>Expense Date</label></td>
+                                <td>: <input type="date" name="expdate" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            </tr>
+
+                            <tr style="font-size: 22px;">
+                                <td><label>Expense Payment</label></td>
+                                <td>:
+                                    <select style="font-family:'Quicksand'; font-size: 18px;" name="ExpPayInfo" id="exppayinfo">
+                                        <option>Cash</option>
+                                        <option>Debit Card</option>
+                                        <option>Credit Card</option>
+                                        <option>Checkbook</option>
+                                        <option>Internet Banking</option>
+                                        <option>Mobile Banking</option>
+                                    </select>
+                                    <label>Payment Information</label> : <input type="text" name="exppayinfo" style="font-family:'Quicksand'; font-size: 18px;">
+                                    
+                                </td>
+                                <td><input type="button" name="submitexpinfo" value="Submit" style="font-family:'Quicksand'; font-size: 18px;"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+                
+                <form>
+                    <fieldset style="border-radius: 30px;">
+                        <legend style="color: #4e0755; border-radius: 5px;"><b>ADD EXPENSE</b></legend>
+                        <table border="0">
+                            <tr style="font-size: 22px;">
+                                <td>
+                                    <label>Item Name </label>
+                                    : <input name="itemname" style="font-family:'Quicksand'; font-size: 18px;" type="text">
+                                    <label>&nbsp; Unit Price </label>
+                                    : <input name="itemprice" style="font-family:'Quicksand'; font-size: 18px;" type="number">
+                                    <select style="font-family:'Quicksand'; font-size: 18px; width: 20px;" name="expcurrency" id="currenct"> 
+                                        <option>Bangladeshi Taka (৳)</option>
+                                        <option>Indian Rupee (₹)</option>
+                                        <option>US Dollar (US$)</option>
+                                        <option>Canadian Dollar (CA$)</option>
+                                        <option>Pound Sterling (£)</option>
+                                        <option>EURO (€)</option>
+                                        <option>Chinese Yen (¥)</option>
+                                    </select>
+                                    <label>&nbsp; Item Quantity </label>
+                                    : <input name="itemqty" style="font-family:'Quicksand'; font-size: 18px;" type="number">
+                                    <input name="itembutton" value="Add Item" style="font-family:'Quicksand'; font-size: 18px;" type="button">
+                                    <input type="reset" name="reset" value="Reset" style="font-family:'Quicksand'; font-size: 18px;">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+
+                <form>
+                    <fieldset style="border-radius: 30px;">
+                        <legend style="color: #4e0755; border-radius: 5px;"><b>VIEW EXPENSE</b></legend>
+                        <table border="0">
+                            <tr style="font-size: 22px;">
+                                <h1 style="font-size: 34px;">Expense List will be Shown Here</h1>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </form>
+            </td>
+
+            <tr>
+                <td>
+                    <input type="submit" name="saveexp" value="Save Expense" style="font-family:'Quicksand'; font-size: 18px; font-weight: 1000;">
+                    <a href="Member Dashboard.html"> <button style="font-family:'Quicksand'; color: red; font-size: 18px; font-weight: 1000;">Back</button> </a>
+
+                </td>
+            </tr>
+        </tr>
+        
+        <tr>
+
+            <td width="1920" height="50" style='border:none;'>
+                <h4 align="center">Copyright ⓒ 2022</h4>
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+</html>
