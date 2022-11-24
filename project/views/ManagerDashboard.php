@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+
+    if(!isset($_SESSION['valid'])){
+        header('location: administrationLogin.php');
+    }
+
+?>
 
 <html>
 <head>
@@ -9,7 +17,7 @@
         <tr bgcolor="#4e0755">
 
             <th style='border:white;' align="center" colspan="2">
-                <a href="Member Dashboard.php"><img src="Logo.png" height="180"></a>
+                <a href="Member Dashboard.php"><img src="../assets/Logo.png" height="180"></a>
 
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="ViewProfile.php" style="color: #99d9ea ;">
@@ -19,7 +27,7 @@
                     ?>
                     </a>&nbsp;|&nbsp;
                     <a href="Home.php" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
-                    <a href="Logout.php" style="color: #99d9ea ;">&nbsp;Log Out</a>&nbsp;&nbsp;
+                    <a href="../controllers/Logout.php" style="color: #99d9ea ;">&nbsp;Log Out</a>&nbsp;&nbsp;
                 </p>
             </th>
         </tr>

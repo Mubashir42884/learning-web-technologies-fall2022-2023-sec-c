@@ -46,7 +46,7 @@
     }else {
         $user = ['username'=> $username, 'name'=> $name, "password"=> $password, "conpwd"=> $conpwd, "phno"=> $phno, "email"=> $email, "gender"=> $gender, "dob"=>$dob, "dp"=>$dp];
         $_SESSION['user'] = $user;
-        header('location: Login.php');
+        header('location: ../views/Login.php');
     }
 
 ?>

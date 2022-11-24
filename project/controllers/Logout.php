@@ -1,6 +1,6 @@
 <?php 
     session_start();
 
-    setcookie('status', 'true', time()-60, '/');
-    header('location: Login.php');
+    unset($_SESSION['valid']);
+    header('location: ../views/Login.php');
 ?>

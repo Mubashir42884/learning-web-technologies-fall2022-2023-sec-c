@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Administration</title>
 </head>
 <body style="font-family: Quicksand ;">
     <table border="0">
@@ -17,22 +17,20 @@
             </th>
         </tr>
 
-        </tr>
-
         <tr style="font-size: 26px;">
             <td colspan="3" width="1920" align="center">
-                <form method="post" action="../controllers/loginCheck.php">
+                <form method="post" action="../controllers/administrationLoginCheck.php">
                     <fieldset style="width:700px; border-radius: 30px;" >
-                        <legend  style="color: #4e0755; border-radius: 5px;"><b>LOGIN</b></legend>
+                        <legend  style="color: #4e0755; border-radius: 5px;"><b>ADMINISTRATION LOGIN</b></legend>
 
-                        <table border="0" width="500">
+                        <table border="0" width="550">
                             <tr style="font-size: 18px;">
-                                <td><label id="uname">Username</label></td>
-                                <td>:<input type="text" name="username" id="uname" style="font-family:'Quicksand'; font-size: 18px;" /></td>
+                                <td width="150"><label id="uid" for="uid">Organization ID</label></td>
+                                <td>:<input type="text" name="uid" style="font-family:'Quicksand'; font-size: 18px;" /></td>
                             </tr>
                             <tr style="font-size: 18px;">
-                                <td><label id="pass">Password</label></td>
-                                <td>:<input type="password" name="password" id="pass" style="font-family:'Quicksand'; font-size: 18px;"/>
+                                <td><label id="password" for="password">Password</label></td>
+                                <td>:<input type="password" name="password" style="font-family:'Quicksand'; font-size: 18px;"/>
                                 <a href="Forgot Password.html">Forgot Password?</a>
                             </td>
                             </tr>
@@ -41,12 +39,11 @@
 
                             </tr>
                             <tr style="font-size: 18px;">
-                                <td  colspan="2" align="center"><input type="submit" name="Login" value="Login" style="font-family:'Quicksand'; font-size: 18px;" /></td>
+                                <td  colspan="2" align="center"><input type="submit" name="Login" style="font-family:'Quicksand'; font-size: 18px;" /></td>
                             </tr>
-                            <tr style="font-size: 14px;">
-                                <td align="center" colspan="2">
-                                    Don't have an account? <a href="Signup.php">Signup Here</a>
-                                    <br><a href="administrationLogin.php">Administration Login</a>
+                            <tr style="font-size: 16px;" >
+                                <td valign="top" align="center" colspan="2">
+                                    <br><a href="Login.php">User Login</a>
                                 </td>
                             </tr>
                         </table>

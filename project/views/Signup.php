@@ -7,7 +7,7 @@
     <table border="0">
         <tr bgcolor="#4e0755">
             <th style='border:white;' align="center" colspan="2">
-                <a href="Home.php"><img src="Logo.png" height="180"></a>
+                <a href="Home.php"><img src="../assets/Logo.png" height="180"></a>
 
                 <p style='border:none; font-size: 20;' align="right">
                     <a href="Home.php" style="color: #99d9ea ;">Home</a>&nbsp;|&nbsp;&nbsp;
@@ -17,7 +17,7 @@
 
         <tr style="font-size: 26px;">
             <td align="center">
-                <form method="post" action="regCheck.php">
+                <form method="post" action="../controllers/regCheck.php">
                 
                     <fieldset style="width: 550px; border-radius: 30px;">
                     <legend  style="color: #4e0755; border-radius: 5px;"><b>REGISTRATION</b></legend>

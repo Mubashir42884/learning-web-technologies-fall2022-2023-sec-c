@@ -20,7 +20,7 @@
                 if($fileSize < 500000){
                     $file_dest = "upload/".$fileName;
                     move_uploaded_file($fileTmpName, $file_dest);
-                    header("Location: ViewProfile.php?upload_success");
+                    header("Location: ../views/members/ViewProfile.php?upload_success");
                 }else{
                     echo "Your image is too big!";
                 }
@@ -35,6 +35,6 @@
     }else{
         $fileName = $_FILES['dp']['name'];
         $_SESSION['user']['dp'] = $fileName;
-        header("Location: ViewProfile.php?upload_success");
+        header("Location: ../views/members/ViewProfile.php?upload_success");
     }
 ?>
